@@ -1,95 +1,107 @@
-* {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: purple;
+}
+nav {
+  background-color: black;
+  padding: 10px 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
 }
-
-html {
-  font-size: 16px;
+.nav-link {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
 }
-
-body {
-  font-family: 'Open Sans', sans-serif;
+.logos {
+  width: auto;
+  height: 80px;
+  border-radius: 50%;
 }
-
-.label {
-  border: 2px solid black;
-  width: 270px;
-  margin: 20px auto;
-  padding: 0 7px;
-}
-
-header h1 {
+.nav-title {
+  color: white;
+  font-size: 28px;
+  margin: 0 50px;
+  font-weight: bold;
+  flex-grow: 1;
   text-align: center;
-  margin: -4px 0;
-  letter-spacing: 0.15px
 }
-
-p {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
+.nav-link li {
+  margin-left : 50px;
 }
-
-.divider {
-  border-bottom: 1px solid #888989;
-  margin: 2px 0;
+.nav-link li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: background-color 0.3s;
 }
-
-.bold {
-  font-weight: 800;
+.nav-link li a:hover {
+  background-color: blue;
+  border-radius: 4px;
 }
-
-.large {
-  height: 10px;
+section {
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: serif;
+  color: white;
 }
-
-.large, .medium {
+footer {
   background-color: black;
-  border: 0;
+  color: white;
+  text-align: center;
+}
+svg {
+  align-items: center;
+  width: 60px;
+  padding: 20px;
 }
 
-.medium {
-  height: 5px;
+h1 {
+  text-align: center;
 }
-
-.small-text {
-  font-size: 0.85rem;
+.home {
+   text-align: center;
+   padding: 50px 20px;
 }
-
-
-.calories-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+.home h2 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 30px;
 }
-
-.calories-info h2 {
-  margin: 0;
+.profile-photo {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
-
-.left-container p {
-  margin: -5px -2px;
-  font-size: 2em;
-  font-weight: 700;
+.profile-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-
-.calories-info span {
-  margin: -7px -2px;
-  font-size: 2.4em;
-  font-weight: 700;
+.home-section p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
 }
-
-.right {
-  justify-content: flex-end;
+img {
+  width: 400px;
+  height: 300px;
 }
-
-.indent {
-  margin-left: 1em;
+.about {
+  margin-top: 50px;
+  margin-bottom: 150px;
 }
-
-.double-indent {
-  margin-left: 2em;
-}
-
-.daily-value p:not(.no-divider) {
-  border-bottom: 1px solid #888989;
+.ult {
+  background-color: black;
 }
